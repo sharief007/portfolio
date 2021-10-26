@@ -6,8 +6,8 @@
         <v-container class="ma-auto">
           <v-row>
             <h1 class="text-subtitle-1" style="width: 100%">Hello I'm</h1>
-            <h1 :class="`text-uppercase primary--text ${$vuetify.breakpoint.mdAndUp ? 'text-h4':'text-h5'}`">Integration Developer</h1>
-            <h2 class="text-h5">Mohammad Sharief Baig</h2>
+            <h1 :class="`text-uppercase info--text ${$vuetify.breakpoint.mdAndUp ? 'text-h4':'text-h5'}`">Mohammad Sharief Baig</h1>
+            <h2 class="text-h6">Java Developer</h2>
             <p class="mt-4 text-body-1">Sharief is a Java developer whose work mainly focuses on Enterprise Integration technologies. He is highly interested and has decent knowledge in Enterprise Integration Patterns, Full-stack web development & Microservices architecture. He is keen to continuous learning and development.</p>
           </v-row>
           <v-row>

@@ -15,7 +15,7 @@
         <v-col cols="12">
           <strong class="text-h6">{{ row.text }}</strong>
         </v-col>
-        <v-col v-for="(item) in row.list" :key="item.logo" cols="6" md="2">
+        <v-col v-for="(item,index) in row.list" :key="index" cols="6" md="2">
           <v-card :dark="$store.state.darkTheme">
             <v-toolbar dense short absolute flat class="transparent" style="width: 100%">
               <v-icon color="success" v-if="item.default">mdi-check-circle-outline</v-icon>
@@ -52,7 +52,7 @@ export default {
       { text: 'Backend Technologies',
         list: [
           { name: 'J2EE', level: 'warning', default: false, logo: 'https://image.flaticon.com/icons/png/512/226/226777.png'},
-          { name: 'Apache Tomcat', level: 'warning', default: false, logo: 'http://tomcat.apache.org/res/images/tomcat.png'},
+          // { name: 'Apache Tomcat', level: 'warning', default: false, logo: 'http://tomcat.apache.org/res/images/tomcat.png'},
           { name: 'Spring', level: 'success', default: false, logo: 'https://img.icons8.com/color/2x/spring-logo.png'},
           { name: 'Spring Boot', level: 'success', default: true, logo: 'https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H.png'},
           { name: 'Spring Cloud', level: 'warning', default: true, logo: 'https://pbs.twimg.com/profile_images/1235936519032049665/dBCF5aOn_400x400.png'},
@@ -76,10 +76,20 @@ export default {
           { name: 'Vuetify', level: 'warning', default: true, logo: 'https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg'}
         ]
       },
-      { text: 'Middlewares',
+      {
+        text: 'Databases',
         list: [
+          { name: 'MySQL', level: 'warning', default: true, logo: 'https://pngimg.com/uploads/mysql/mysql_PNG24.png' },
+          { name: 'MongoDB', level: 'warning', default: false, logo: 'https://img.icons8.com/color/2x/mongodb.png' }
+        ]
+      },
+      { text: 'Middleware Technologies',
+        list: [
+          { name: 'Spring Intg', level: 'warning', default: true, logo: 'https://springorama.files.wordpress.com/2018/04/spring-integration.png?w=650'},
           { name: 'RabbitMQ', level: 'success', default: true, logo: 'https://cdn.freebiesupply.com/logos/large/2x/rabbitmq-logo-png-transparent.png'},
-          { name: 'Google PubSub', level: 'info', default: false, logo: 'https://uploads-ssl.webflow.com/5ebd54899f7ac255cd8e0950/5fc5067732c4f5a49d4bdf34_1200px-Cloud-Pub-Sub-Logo.jpg'}
+          { name: 'Google PubSub', level: 'info', default: false, logo: 'https://uploads-ssl.webflow.com/5ebd54899f7ac255cd8e0950/5fc5067732c4f5a49d4bdf34_1200px-Cloud-Pub-Sub-Logo.jpg'},
+          { name: 'SAP PI/PO', level: 'warning', default: false, logo: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/122012/logo_sap.png?itok=_GxGvaiv'}
+          // { name: 'SAP CPI PI', level: 'info', default: false, logo: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/122012/logo_sap.png?itok=_GxGvaiv'}
         ]
       },
       { text: 'Web Protocols',
@@ -88,13 +98,6 @@ export default {
           { name: 'Websocket', level: 'success', default: false, logo: 'https://mk0resourcesinf5fwsf.kinstacdn.com/wp-content/uploads/2020/10/websocket-logo12042014.gif'},
           { name: 'AMQP', level: 'warning', default: false, logo: 'https://www.influxdata.com/wp-content/uploads/AMQP-logo.jpg'},
           { name: 'STOMP', level: 'success', default: false, logo: 'https://stomp.github.io/images/project-logo.png'}
-        ]
-      },
-      { text: 'Integration Technologies',
-        list: [
-          { name: 'Spring Integration', level: 'warning', default: true, logo: 'https://springorama.files.wordpress.com/2018/04/spring-integration.png?w=650'},
-          { name: 'SAP PI/PO', level: 'warning', default: false, logo: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/122012/logo_sap.png?itok=_GxGvaiv'},
-          { name: 'SAP CPI PI', level: 'info', default: false, logo: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/122012/logo_sap.png?itok=_GxGvaiv'}
         ]
       },
       { text: 'Build & Version control',
@@ -107,7 +110,7 @@ export default {
       },
       { text: 'Tools & Software',
         list: [
-          { name: 'Intellij Idea Ultimate', level: 'success', default: true, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1200px-IntelliJ_IDEA_Icon.svg.png'},
+          { name: 'Intellij Idea', level: 'success', default: true, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1200px-IntelliJ_IDEA_Icon.svg.png'},
           { name: 'VS Code', level: 'success', default: true, logo: 'https://logowik.com/content/uploads/images/visual-studio-code7642.jpg'},
           { name: 'Eclipse', level: 'warning', default: false, logo: 'https://www.eclipse.org/downloads/assets/public/images/logo-eclipse.png'},
           { name: 'Postman', level: 'warning', default: false, logo: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/z8zb2smxpm2idu5anl2h'},

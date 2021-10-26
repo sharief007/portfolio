@@ -8,6 +8,7 @@
         </template>
         <div class="py-4">
           <h2 :class="`headline font-weight-bold ${item.color}--text`">{{ item.title }}</h2>
+          <span class="subtitle-1" v-text="item.year" v-if="$vuetify.breakpoint.smAndDown"></span>
           <div>{{item.text}}</div>
         </div>
       </v-timeline-item>
