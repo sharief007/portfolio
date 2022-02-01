@@ -28,8 +28,14 @@ export default {
       {
         color: 'green',
         year: '2021 - present',
-        title: 'Deloitte Consulting India Pvt Ltd',
+        title: 'Deloitte USI, Hyderabad',
         text: 'He started his professional career as an Associate Analyst at Deloitte USI (US offices of India).'
+      },
+      {
+        color: 'pink',
+        year: '2021 - 2023',
+        title: 'Jain University, Karnataka',
+        text: `He is pursuing his master's degree MCA (Master of Computer Applications) at Jain online University.`
       },
       {
         color: 'cyan',

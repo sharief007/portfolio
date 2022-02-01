@@ -13,6 +13,9 @@
           <v-row>
             <v-btn icon x-large v-for="(item,index) in socialIcons" :key="index" class="mx-2" :href="item.link" target="_blank">
               <v-icon x-large :color="item.color" v-text="item.icon"></v-icon>
+<!--              <v-avatar size="45">-->
+<!--                <v-img :src="item.icon"></v-img>-->
+<!--              </v-avatar>-->
             </v-btn>
           </v-row>
         </v-container>
@@ -34,10 +37,10 @@ export default {
   },
   data: ()=> ({
     socialIcons: [
-      { icon: 'mdi-facebook', color: 'primary', link: 'https://t.co/3QFgUjzd8X?amp=1'},
-      { icon: 'mdi-twitter', color: 'info', link: 'https://twitter.com/its_sharief'},
       { icon: 'mdi-linkedin', color: 'blue', link: 'https://linkedin.com/in/sharief-'},
-      { icon: 'mdi-github', color: 'black', link: 'https://github.com/sharief007'}
+      { icon: 'mdi-github', color: 'black', link: 'https://github.com/sharief007'},
+      { icon: 'mdi-codepen', color: 'primary', link: 'https://leetcode.com/sharief007/'}
+
     ]
   })
 }

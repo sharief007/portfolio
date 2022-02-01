@@ -33,7 +33,8 @@ export default {
       { icon: 'mdi-home', text: 'Home', to: '/'},
       { icon: 'mdi-briefcase-clock', text: 'About', to: '/about'},
       { icon: 'mdi-text-search', text: 'Skills', to: '/skills'},
-      { icon: 'mdi-tools', text: 'Projects', to: '/projects'}
+      { icon: 'mdi-tools', text: 'Projects', to: '/projects'},
+      { icon : 'mdi-certificate', text : 'Certifications', to: '/certs'}
     ]
   }),
   methods: {

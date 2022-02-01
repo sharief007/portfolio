@@ -36,23 +36,31 @@ export default {
     projects: [
       { title: 'Portfolio',
         description: `Portfolio is a static web application made using material theme provided by VuetifyJS. The application you are accessing now is the portfolio project.`,
-        type: 'Web',
-        stack: ['vuejs','vuex','vue-router','vuetify'],
+        type: 'Static Web Application',
+        stack: ['vue.js','vuex','vue-router','Vuetify'],
         links: [
             { value: 'https://github.com/sharief007/portfolio', key: 'view code' }
         ]
       },
       { title: 'HttpClient',
         description: `HttpClient is a desktop application built using JavaFX & new Java 11 http package. It provides all required functionalities to test rest Api's similar to postman tool.`,
-        type: 'Desktop',
+        type: 'Desktop Application',
         stack: ['Java','JavaFX','SpringBoot','SceneBuilder'],
         links: [
             { value: 'https://github.com/sharief007/HttpClient', key: 'view code' }
         ]
       },
+      { title: 'SAP RFC Client',
+        description: `SAP RFC Client is a desktop application which can be used to make RFC calls to SAP Netweaver. SAP Data is serialized and deserialized into json for ease of use.`,
+        type: 'Desktop Application',
+        stack: ['Java','JavaFX','SAP JCO'],
+        links: [
+          { value: 'https://github.com/sharief007/GroupChat', key: 'view code' }
+        ]
+      },
       { title: 'GroupChat',
         description: `GroupChat is a responsive web application built using websockets. It provides chat functionality,Users can share text msgs & embedded youtube/facebook videos.`,
-        type: 'Web',
+        type: 'Web Application',
         stack: ['SpringBoot','HTML','Bootstrap','Javascript','Jquery'],
         links: [
             { value: 'https://github.com/sharief007/GroupChat', key: 'view code' },
@@ -61,15 +69,23 @@ export default {
       },
       { title: 'XSLT Processor',
         description: `XSLT Processor is a desktop application built using JavaFX and Java16 (JPackage). It performs xslt v1 transformations and is installable on OS using JPackage tool.`,
-        type: 'Desktop',
+        type: 'Desktop Application',
         stack: ['Java','JavaFX','SpringBoot','SceneBuilder'],
         links: [
             { value: 'https://github.com/sharief007/XSLT-Processor', key: 'view code' }
         ]
       },
+      { title: 'GoAPIs',
+        description: `GoAPIs is a commandline application written in nodejs to consume popular Google APIs such as Google Drive API, People API, Gmail API using Google Nodejs SDK`,
+        type: 'Command Line Application',
+        stack: ['Nodejs','Google Nodejs SDK'],
+        links: [
+          { value: 'https://github.com/sharief007/googleapis-node-cli', key: 'view code' }
+        ]
+      },
       { title: 'SAP CLI',
         description: `SAP Cli is a command line application made using Nodejs. It provides functionality to consume odata services using built in http module. It is fast & asynchronous.`,
-        type: 'Command Line',
+        type: 'Command Line Application',
         stack: ['Nodejs'],
         links: [
             { value: 'https://github.com/sharief007/sapcli', key: 'view code' },
@@ -78,7 +94,7 @@ export default {
       },
       { title: 'Pulsar Client',
         description: `Apache Pulsar is a cloud-native, opensource streaming platform. Pulsar Client is a java client appliaction to publish and consume messages through Pulsar.`,
-        type: 'Desktop',
+        type: 'Desktop Application',
         stack: ['Java', 'JavaFX', 'SpringBoot', 'Scene Builder', 'Apache Pulsar'],
         links: [
             { value: 'https://pulsar.apache.org/', 'key': `what's apache pulsar?`},
